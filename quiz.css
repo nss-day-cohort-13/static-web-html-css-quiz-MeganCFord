@@ -1,22 +1,61 @@
 /*
 Each card should take up 30% of the width of the browser window.
-The entire card has a solid 1px border that is lightblue.
-The card title has a dotted 1px border that is lightgray.
-The title and product image are centered.
-Notice that the text for the description in the image is justified.
 The text for the product specification details and pricing details is bold.
-The availability element extends the full width of the card, with a dark grey background and yellow text.*/
+*/
 
-#main-content {
-	max-width: 980px;
-	margin: 0 auto;
+/*overall styling*/
+
+* {
+	box-sizing: border-box;
 }
+
+.main-content {
+	max-width: 1020px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*card styling*/
 
 article.card {
 	float: left;
 	width: 30%;
 	border: 1px solid lightblue;
+	margin: 5px 1.666666667%;
+	height: 800px;
 }
 article > header {
 	border: 1px dotted lightgrey;
+	text-align: center;
+	font-size: .8em;
 }
+
+/*SECTION 1 (information) STYLING*/
+.product-image {
+	display: block;
+	margin: 15px auto;
+}
+div.center-me {
+	height: 190px;
+	position: relative;
+}
+div.center-me p {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 -50% 0 0;
+    transform: translate(-50%, -50%) 
+}
+
+p.product-description {
+	font-size: 0.85em;
+	padding: 10px;
+	text-align: justify;
+}
+
+.product-availability {
+	background-color: darkgrey;
+	color: yellow;
+	width: 100%;
+}
+
