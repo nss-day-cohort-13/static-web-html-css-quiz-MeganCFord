@@ -1,16 +1,12 @@
-/*
-Each card should take up 30% of the width of the browser window.
-The text for the product specification details and pricing details is bold.
-*/
+/*Validated using css validator, no errors found*/
 
 /*overall styling*/
-
 * {
 	box-sizing: border-box;
 }
 
 .main-content {
-	max-width: 1020px; /*included in case a full-width header/footer needs to be added */ 
+	max-width: 1020px;  
 	margin: 0 auto;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,7 +20,7 @@ article.card {
 	margin: 5px 1.666666667%;
 }
 
-article > header {
+article > header { 
 	border: 1px dotted lightgrey;
 	text-align: center;
 	font-size: .8em;
@@ -36,26 +32,16 @@ article > header {
 	margin: 15px auto;
 }
 
-/*this code vertically centers the description in the "card" article, allowing the cards to be the same height even if the descriptions are different */
-div.center-me {
+
+div.product-description {
 	height: 190px;
-	position: relative;
 }
 
-div.center-me p { 
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0 -50% 0 0;
-    transform: translate(-50%, -50%) 
+div.product-description p {
+  font-size: 0.85em;
+  padding: 10px;
+  text-align: justify;
 }
-
-p.product-description {
-	font-size: 0.85em;
-	padding: 10px;
-	text-align: justify;
-}
-
 
 .product-availability {
 	background-color: darkgrey;
@@ -88,5 +74,5 @@ p.product-description {
 
 .specifications p {
 	font-size: .6em;
-	margin: 0 0 0 2px;
+	margin: 0 0 0 2px; /*needed to include these 0s to override standard p margin width */
 }
