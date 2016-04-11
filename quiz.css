@@ -30,6 +30,8 @@ article > header {
 .product-image {
 	display: block;
 	margin: 15px auto;
+	width: 150px;
+	height: 150px; /*updated to have image sizes in CSS not HTML per comment*/
 }
 
 
