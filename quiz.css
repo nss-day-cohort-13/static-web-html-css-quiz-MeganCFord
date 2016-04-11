@@ -54,20 +54,20 @@ div.product-description p {
 	line-height: 1.5em;
 }
 
-/*sections 2 and 3 styling. V2 refactor to be one section? or at least have the same class? */
+/*changed to have sections 2 and 3 be the same- ok since only section 2 has a p */
 
-.specifications h3, .pricing h3 {
+.specifications h3 {
 	font-size: .9em;
 	font-weight: normal;
 	margin: 10px 0 5px 5px;
 }
 
-.specifications ul, .pricing ul {
+.specifications ul {
 	padding: 0 0 5px 10px;
 	margin: 0;
 }
 
-.specifications ul li, .pricing ul li {
+.specifications ul li {
 	font-size: .8em;
 	line-height: 1em;
 	font-weight: bold;
