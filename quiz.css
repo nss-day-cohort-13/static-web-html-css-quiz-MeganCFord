@@ -10,7 +10,7 @@ The text for the product specification details and pricing details is bold.
 }
 
 .main-content {
-	max-width: 1020px;
+	max-width: 1020px; /*included in case a full-width header/footer needs to be added */ 
 	margin: 0 auto;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -18,12 +18,12 @@ The text for the product specification details and pricing details is bold.
 /*card styling*/
 
 article.card {
-	float: left;
+	float: left; /*v2: change this area using media queries for mobile-responsive layout. currently this layout only works on screens about 720px and wider.*/
 	width: 30%;
 	border: 1px solid lightblue;
 	margin: 5px 1.666666667%;
-	height: 800px;
 }
+
 article > header {
 	border: 1px dotted lightgrey;
 	text-align: center;
@@ -35,11 +35,14 @@ article > header {
 	display: block;
 	margin: 15px auto;
 }
+
+/*this code vertically centers the description in the "card" article, allowing the cards to be the same height even if the descriptions are different */
 div.center-me {
 	height: 190px;
 	position: relative;
 }
-div.center-me p {
+
+div.center-me p { 
 	position: absolute;
     top: 50%;
     left: 50%;
@@ -53,9 +56,37 @@ p.product-description {
 	text-align: justify;
 }
 
+
 .product-availability {
 	background-color: darkgrey;
 	color: yellow;
 	width: 100%;
+	margin: 8px 0;
+	font-size: .8em;
+	line-height: 1.5em;
 }
 
+/*sections 2 and 3 styling. V2 refactor to be one section? or at least have the same class? */
+
+.specifications h3, .pricing h3 {
+	font-size: .9em;
+	font-weight: normal;
+	margin: 10px 0 5px 5px;
+}
+
+.specifications ul, .pricing ul {
+	padding: 0 0 5px 10px;
+	margin: 0;
+}
+
+.specifications ul li, .pricing ul li {
+	font-size: .8em;
+	line-height: 1em;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+.specifications p {
+	font-size: .6em;
+	margin: 0 0 0 2px;
+}
