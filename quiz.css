@@ -2,41 +2,41 @@
 
 /*overall styling*/
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .main-content {
-	max-width: 1020px;  
-	margin: 0 auto;
-	font-family: Arial, Helvetica, sans-serif;
+  max-width: 1020px;  
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*card styling*/
 
 article.card {
-	float: left; /*v2: change this area using media queries for mobile-responsive layout. currently this layout only works on screens about 720px and wider.*/
-	width: 30%;
-	border: 1px solid lightblue;
-	margin: 5px 1.666666667%;
+  float: left; /*v2: change this area using media queries for mobile-responsive layout. currently this layout only works on screens about 720px and wider.*/
+  width: 30%;
+  border: 1px solid lightblue;
+  margin: 5px 1.666666667%;
 }
 
 article > header { 
-	border: 1px dotted lightgrey;
-	text-align: center;
-	font-size: .8em;
+  border: 1px dotted lightgrey;
+  text-align: center;
+  font-size: .8em;
 }
 
 /*SECTION 1 (information) STYLING*/
 .product-image {
-	display: block;
-	margin: 15px auto;
-	width: 150px;
-	height: 150px; /*updated to have image sizes in CSS not HTML per comment*/
+  display: block;
+  margin: 15px auto;
+  width: 150px;
+  height: 150px; /*updated to have image sizes in CSS not HTML per comment*/
 }
 
 
 div.product-description {
-	height: 190px;
+  height: 190px;
 }
 
 div.product-description p {
@@ -46,35 +46,35 @@ div.product-description p {
 }
 
 .product-availability {
-	background-color: darkgrey;
-	color: yellow;
-	width: 100%;
-	margin: 8px 0;
-	font-size: .8em;
-	line-height: 1.5em;
+  background-color: darkgrey;
+  color: yellow;
+  width: 100%;
+  margin: 8px 0;
+  font-size: .8em;
+  line-height: 1.5em;
 }
 
 /*changed to have sections 2 and 3 be the same- ok since only section 2 has a p */
 
 .specifications h3 {
-	font-size: .9em;
-	font-weight: normal;
-	margin: 10px 0 5px 5px;
+  font-size: .9em;
+  font-weight: normal;
+  margin: 10px 0 5px 5px;
 }
 
 .specifications ul {
-	padding: 0 0 5px 10px;
-	margin: 0;
+  padding: 0 0 5px 10px;
+  margin: 0;
 }
 
 .specifications ul li {
-	font-size: .8em;
-	line-height: 1em;
-	font-weight: bold;
-	list-style-type: none;
+  font-size: .8em;
+  line-height: 1em;
+  font-weight: bold;
+  list-style-type: none;
 }
 
 .specifications p {
-	font-size: .6em;
-	margin: 0 0 0 2px; /*needed to include these 0s to override standard p margin width */
+  font-size: .6em;
+  margin: 0 0 0 2px; /*needed to include these 0s to override standard p margin width */
 }
